@@ -6,6 +6,9 @@
     <title>Document</title>
 </head>
 <body>
+    <button id="myButton">이전페이지</button>
+    <button id="myButton2">다음페이지</button>
+    <button id="myButton3">새로고침</button>
     
     <script>
         console.log("Hello, World! Test");
@@ -36,9 +39,20 @@
 
         
         // location.href = 'https://www.naver.com'; // Redirects to the specified URL
+        // location.href = 'http://127.0.0.1:5500/subfolder/test.html'; // Redirects to the specified URL
 
-        location.href = 'http://127.0.0.1:5500/subfolder/test.html'; // Redirects to the specified URL
-
+        const button = document.getElementById('myButton');
+        button.addEventListener('click', () => {
+            history.back(); // Navigates to the previous page in the session history
+        }); 
+        const button2 = document.getElementById('myButton2');
+        button2.addEventListener('click', () => {   
+            history.forward(); // Navigates to the next page in the session history
+        });
+        const button3 = document.getElementById('myButton3');
+        button3.addEventListener('click', () => {
+            location.reload(); // Reloads the current page
+        });
 
 
 
