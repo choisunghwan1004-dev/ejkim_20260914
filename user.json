@@ -1,0 +1,17 @@
+[
+  {
+    "name": "김하늘",
+    "email": "sky@example.com",
+    "domain": "weather"
+  },
+  {
+    "name": "이바다",
+    "email": "sea@example.com",
+    "domain": "economy"
+  },
+  {
+    "name": "박구름",
+    "email": "cloud@example.com",
+    "domain": "weather"
+  }
+]
